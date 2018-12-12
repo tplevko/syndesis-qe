@@ -19,6 +19,7 @@ public abstract class AbstractStep extends SyndesisPageObject {
         public static final String LOG = "LOG";
         public static final String BASIC_FILTER = "BASIC FILTER";
         public static final String ADVANCED_FILTER = "ADVANCED FILTER";
+        public static final String TEMPLATE = "TEMPLATE";
     }
 
     @Override
