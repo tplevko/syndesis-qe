@@ -90,6 +90,7 @@ Feature: Google Sheets Connector
     And check visibility of data mapper ui
     And open data bucket "Properties"
     And define spreadsheetID as property in data mapper
+    And open data mapper collection mappings
     And create data mapper mappings
       | spreadsheetId | spreadsheetId |
       | first_name    | A             |
@@ -136,6 +137,7 @@ Feature: Google Sheets Connector
     And check visibility of data mapper ui
     And open data bucket "Properties"
     And define spreadsheetID as property in data mapper
+    And open data mapper collection mappings
     And create data mapper mappings
       | spreadsheetId | spreadsheetId |
       | first_name    | A             |
@@ -181,6 +183,7 @@ Feature: Google Sheets Connector
     And check visibility of data mapper ui
     And open data bucket "Properties"
     And define spreadsheetID as property in data mapper
+    And open data mapper collection mappings
     And create data mapper mappings
       | spreadsheetId | spreadsheetId |
       | first_name    | #1            |
@@ -399,6 +402,7 @@ Feature: Google Sheets Connector
     When add integration step on position "0"
     And select the "Data Mapper" connection
     And check visibility of data mapper ui
+    And open data mapper collection mappings
     And create data mapper mappings
       | A | A |
       | B | B |
