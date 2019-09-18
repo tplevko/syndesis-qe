@@ -1,14 +1,14 @@
 package io.syndesis.qe.utils;
 
+import org.apache.commons.lang.RandomStringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.google.api.services.calendar.model.Calendar;
 import com.google.api.services.calendar.model.CalendarList;
 import com.google.api.services.calendar.model.CalendarListEntry;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.Events;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.RandomStringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
 
@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Class that provides Calendar API functionality. All methods needs specification of a testing account.
@@ -49,6 +51,11 @@ public class GoogleCalendarUtils {
     }
 
     public String getAliasedCalendarName(String originalName) {
+        log.info("**********************");
+        log.info("**********************");
+        log.info(originalName + "-" + aliasSuffix);
+        log.info("**********************");
+        log.info("**********************");
         return originalName + "-" + aliasSuffix;
     }
 
